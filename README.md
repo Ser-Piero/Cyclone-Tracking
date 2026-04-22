@@ -3,7 +3,7 @@
 **Multi-level cyclone tracking tool for ICON and WRF mesoscale model output**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://doi.org/10.5281/zenodo.19695732.svg)](https://doi.org/10.5281/zenodo.19695732)
 
 ---
 
@@ -75,9 +75,9 @@ pip install netCDF4 wrf-python
 
 If you use this code in a publication, please cite it as:
 
-> Serafini P. et al. (2025). *cyclone_tracker_multilevel – Multi-level cyclone
+> Serafini P. (2026). *cyclone_tracker_multilevel – Multi-level cyclone
 > tracking for ICON and WRF*. Zenodo.
-> https://doi.org/10.5281/zenodo.XXXXXXX
+> https://doi.org/10.5281/zenodo.19695732
 
 ---
 
