@@ -81,21 +81,6 @@ If you use this code in a publication, please cite it as:
 
 ---
 
-## How to publish on Zenodo and get a DOI
-
-1. **Push to GitHub** – create a public repository and push this code.
-2. **Connect Zenodo** – go to <https://zenodo.org>, log in with your GitHub
-   account, open the *GitHub* tab and enable the repository.
-3. **Create a Release** – on GitHub, tag the commit (e.g. `v1.0.0`) and create
-   a Release.  Zenodo auto-archives it and mints a DOI within minutes.
-4. **Update the badge** – replace `XXXXXXX` in this README and in the script
-   header with the real Zenodo record ID.
-
-Alternative: upload a `.zip` directly at <https://zenodo.org/deposit> (no
-GitHub account needed).
-
----
-
 ## License
 
 MIT – see [LICENSE](LICENSE).
@@ -104,6 +89,4 @@ MIT – see [LICENSE](LICENSE).
 
 ## Authors
 
-- Piero Serafini
-- Umberto `<SURNAME>` *(original WRF version)*
-- `<your name>` *(unified version)*
+- Piero Serafini - PhD student in Atmospheric Physics - University of L'Aquila (UNIVAQ) - Center of Excellence in Telesensing of Environment and Model Prediction of Severe Events (CETEMPS) - Via Vetoio, Edificio Renato Ricamo, L'Aquila (AQ), Italy, 67100 - piero.serafini@graduate.univaq.it
