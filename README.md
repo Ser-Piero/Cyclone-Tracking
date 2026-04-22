@@ -3,7 +3,7 @@
 **Multi-level cyclone tracking tool for ICON and WRF mesoscale model output**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://doi.org/10.5281/zenodo.19695732.svg)](https://doi.org/10.5281/zenodo.19695732)
+[![DOI](https://zenodo.org/badge/1217993590.svg)](https://doi.org/10.5281/zenodo.19695732)
 
 ---
 
