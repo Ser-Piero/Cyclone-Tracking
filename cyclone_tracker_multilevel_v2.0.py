@@ -48,17 +48,8 @@ Citation / DOI
   If you use this tool in a publication, please cite it as:
     Serafini P. et al. (2025). cyclone_tracker_multilevel – Multi-level
     cyclone tracking for ICON and WRF. Zenodo.
-    https://doi.org/10.5281/zenodo.XXXXXXX  <-- replace after upload
+    https://doi.org/10.5281/zenodo.19695732  <-- replace after upload
 
-How to get a DOI for this code
---------------------------------
-  1. Push the code to a GitHub repository (https://github.com).
-  2. Go to https://zenodo.org and log in with your GitHub account.
-  3. In Zenodo → "GitHub" tab, enable the repository.
-  4. Create a GitHub Release (tag, e.g. v1.0.0).
-  5. Zenodo automatically archives the release and mints a DOI.
-  Alternative: upload the .zip directly at https://zenodo.org/deposit.
-  Zenodo is free and its DOIs are permanent and citable.
 """
 
 # =============================================================================
