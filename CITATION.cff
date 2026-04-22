@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: Cyclone-Tracking
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Piero
+    given-names: Ser
+repository-code: "https://github.com/Ser-Piero/Cyclone-Tracking"
+abstract: >-
+  Multi-level cyclone tracking tool for ICON and WRF model output. The algorithm
+  tracks cyclone centers from geopotential height and sea-level pressure fields
+  and derives a weighted-mean track across levels.
+keywords:
+  - cyclone-tracking
+  - wrf
+  - icon
+  - meteorology
+license: MIT

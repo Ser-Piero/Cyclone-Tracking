@@ -1,0 +1,16 @@
+{
+  "title": "Cyclone-Tracking",
+  "description": "Multi-level cyclone tracking tool for ICON and WRF model output.",
+  "creators": [
+    {
+      "name": "Ser Piero"
+    }
+  ],
+  "keywords": [
+    "cyclone-tracking",
+    "WRF",
+    "ICON",
+    "meteorology"
+  ],
+  "license": "MIT"
+}
