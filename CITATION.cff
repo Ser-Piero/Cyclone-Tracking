@@ -3,7 +3,7 @@ title: Cyclone-Tracking
 message: "If you use this software, please cite it using the metadata below."
 type: software
 authors:
-  - family-names: Ser-Piero
+  - name: Ser-Piero
 repository-code: "https://github.com/Ser-Piero/Cyclone-Tracking"
 abstract: >-
   Multi-level cyclone tracking tool for ICON and WRF model output. The algorithm

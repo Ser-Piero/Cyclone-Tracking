@@ -18,7 +18,10 @@ class CyclonePoint:
 def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     dlat = radians(lat2 - lat1)
     dlon = radians(lon2 - lon1)
-    a = sin(dlat / 2.0) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2.0) ** 2
+    sin_dlat_half = sin(dlat / 2.0)
+    sin_dlon_half = sin(dlon / 2.0)
+    cos_product = cos(radians(lat1)) * cos(radians(lat2))
+    a = sin_dlat_half**2 + cos_product * sin_dlon_half**2
     return 2.0 * EARTH_RADIUS_KM * atan2(sqrt(a), sqrt(1.0 - a))
 
 
