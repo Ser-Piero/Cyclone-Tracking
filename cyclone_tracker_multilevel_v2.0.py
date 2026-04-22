@@ -31,8 +31,12 @@ Output
 
 Authors
 -------
-  Piero Serafini, Umberto <SURNAME>        (original authors)
-  <your name here>                         (unified version)
+  Piero Serafini
+    PhD student in Atmospheric Physics
+      University of L'Aquila (UNIVAQ)
+      Center of Excellence in Telesensing of Environment and Model Prediction of Severe Events (CETEMPS)
+        Via Vetoio, Edificio Renato Ricamo, L'Aquila (AQ), Italy, 67100
+          piero.serafini@graduate.univaq.it
 
 License
 -------
