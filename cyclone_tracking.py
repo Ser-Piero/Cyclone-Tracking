@@ -53,7 +53,19 @@ def locate_level_center(
     guess: CyclonePoint,
     search_radius_km: float,
 ) -> CyclonePoint:
-    """Find a level-specific center using equally weighted normalized geopotential and SLP minima."""
+    """Find a center for one level from geopotential and sea-level pressure grids.
+
+    Args:
+        geopotential_height: 2D rectangular grid for one pressure level.
+        sea_level_pressure: 2D rectangular grid with same shape as geopotential_height.
+        lat: 2D latitude grid.
+        lon: 2D longitude grid.
+        guess: Initial center guess.
+        search_radius_km: Maximum distance from guess used to search candidates.
+
+    Returns:
+        CyclonePoint at the minimum of the equally weighted normalized geopotential/SLP score.
+    """
     _ensure_same_shape(geopotential_height, sea_level_pressure, lat, lon)
 
     candidates: list[tuple[float, float, float, float]] = []
@@ -79,6 +91,7 @@ def locate_level_center(
 
 
 def weighted_mean_track(level_centers: Mapping[str, CyclonePoint], level_weights: Mapping[str, float]) -> CyclonePoint:
+    """Combine level-specific centers into a weighted-mean cyclone position."""
     total_weight = 0.0
     lat_acc = 0.0
     lon_acc = 0.0
@@ -104,6 +117,7 @@ def track_cyclone(
     search_radius_km: float = 250.0,
     level_weights: Mapping[str, float] | None = None,
 ) -> CyclonePoint:
+    """Track a cyclone center across multiple pressure levels and return a weighted-mean center."""
     if set(geopotential_by_level) != set(slp_by_level):
         mismatched_keys = sorted(set(geopotential_by_level).symmetric_difference(set(slp_by_level)))
         raise ValueError(f"Level keys for geopotential and pressure fields must match: {mismatched_keys}")
