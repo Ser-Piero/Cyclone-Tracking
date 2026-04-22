@@ -53,6 +53,7 @@ def locate_level_center(
     guess: CyclonePoint,
     search_radius_km: float,
 ) -> CyclonePoint:
+    """Find a level-specific center using equally weighted normalized geopotential and SLP minima."""
     _ensure_same_shape(geopotential_height, sea_level_pressure, lat, lon)
 
     candidates: list[tuple[float, float, float, float]] = []
@@ -104,7 +105,8 @@ def track_cyclone(
     level_weights: Mapping[str, float] | None = None,
 ) -> CyclonePoint:
     if set(geopotential_by_level) != set(slp_by_level):
-        raise ValueError("Level keys for geopotential and pressure fields must match")
+        mismatched_keys = sorted(set(geopotential_by_level).symmetric_difference(set(slp_by_level)))
+        raise ValueError(f"Level keys for geopotential and pressure fields must match: {mismatched_keys}")
 
     level_centers: dict[str, CyclonePoint] = {}
     for level in geopotential_by_level:
